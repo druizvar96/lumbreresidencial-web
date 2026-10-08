@@ -1,15 +1,357 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/jpeg" href="/logo-lumbre.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lumbre Residencial SL | Cuidado Sociosanitario y Ayuda a Domicilio</title>
-    <meta name="description" content="Cuidamos de los tuyos como en casa. Servicios sociosanitarios de ayuda a domicilio, acompañamiento hospitalario, fisioterapia y gestión de la Ley de Dependencia en Aragón y toda España." />
-    <meta name="theme-color" content="#C8653A" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumbre Residencial SL | Cuidado Sociosanitario y Ayuda a Domicilio</title>
+  <meta name="description" content="Cuidamos de los tuyos como en casa. Servicios sociosanitarios de ayuda a domicilio, acompañamiento hospitalario, fisioterapia y gestión de la Ley de Dependencia en Aragón y toda España.">
+  <link rel="icon" type="image/jpeg" href="./images/logo-lumbre.jpg">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Top Banner Accesible -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span>🛡️ Lumbre Residencial SL · Cuidado Sociosanitario Oficial</span>
+        <span style="opacity: 0.5;">|</span>
+        <span>Zaragoza · Teruel · Atención en todo Aragón</span>
+      </div>
+      <div class="top-bar-right">
+        <button id="btn-toggle-font" class="btn-a11y-font" title="Cambiar tamaño de letra accesible">A+</button>
+        <a href="tel:976000000" class="top-phone-link">📞 Teléfono gratuito: 976 00 00 00</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cabecera y Navegación Principal -->
+  <header class="header-nav">
+    <div class="container">
+      <a href="index.html" class="logo-brand">
+        <div class="logo-img-box">
+          <img src="./images/logo-lumbre.jpg" alt="Isotipo Lumbre Residencial">
+        </div>
+        <div>
+          <div class="logo-text-title">LUMBRE <span>RESIDENCIAL</span></div>
+          <div class="logo-text-sub">Cuidado Sociosanitario · Ayuda a Domicilio</div>
+        </div>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="cursos.html">Cursos Empresa</a></li>
+          <li><a href="noticias.html">Noticias y Normativa</a></li>
+          <li><a href="empleo.html">Bolsa de Empleo</a></li>
+          <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <a href="#valoracion" class="btn-header-cta js-open-valoracion">✨ Valoración gratuita</a>
+        <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+
+    <!-- Menú móvil desplegable -->
+    <div id="mobile-nav-panel" style="display: none; background: #fff; padding: 15px 20px; border-bottom: 1px solid var(--color-borde);">
+      <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+        <li><a href="index.html" style="font-weight: bold; color: var(--color-terracota);">Inicio</a></li>
+        <li><a href="servicios.html">Servicios de Cuidado</a></li>
+        <li><a href="cursos.html">Cursos y Formación FUNDAE</a></li>
+        <li><a href="noticias.html">Noticias y Normativa</a></li>
+        <li><a href="empleo.html">Bolsa de Empleo</a></li>
+        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+        <li><a href="contacto.html">Contacto y Horarios</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-tag">❤️ Atención personalizada en el hogar</div>
+            <h1 class="hero-title">Cuidamos de los tuyos <br><span>como en casa.</span></h1>
+            <p class="hero-subtitle">
+              Asistencia profesional, cálida y de confianza para personas mayores o dependientes. Ayuda a domicilio, acompañamiento hospitalario, fisioterapia y gestión completa de la Ley de Dependencia sin papeleos para la familia.
+            </p>
+
+            <div class="hero-ctas">
+              <button class="btn-accent js-open-valoracion">✨ Pide tu valoración gratuita</button>
+              <a href="tel:976000000" class="btn-outline">📞 Llamar ahora</a>
+              <a href="https://wa.me/34600000000?text=Hola,%20quisiera%20información%20sobre%20Lumbre%20Residencial" target="_blank" class="btn-outline" style="border-color: #25D366; color: #1e7e34;">💬 WhatsApp directo</a>
+            </div>
+
+            <div class="hero-trust-bar">
+              <div class="trust-item">
+                <strong>✓ Respuesta &lt; 24h</strong>
+                <span>Atención inmediata</span>
+              </div>
+              <div class="trust-item">
+                <strong>✓ Personal Titulado</strong>
+                <span>Con seguro de R.C.</span>
+              </div>
+              <div class="trust-item">
+                <strong>✓ Coordinador Único</strong>
+                <span>Un solo interlocutor</span>
+              </div>
+              <div class="trust-item">
+                <strong>✓ Cambio sin Coste</strong>
+                <span>Si no hay afinidad</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <img src="./images/hero-lumbre.jpg" alt="Cuidadora sociosanitaria de Lumbre Residencial atendiendo cariñosamente a una señora mayor en su hogar">
+            <div class="hero-quote-badge">
+              <strong>Compromiso Lumbre Residencial</strong>
+              <p>«Queremos que sigan en su propia casa con la máxima dignidad, seguridad y la calidez del hogar.»</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCESOS RÁPIDOS A LAS 4 ÁREAS -->
+    <section class="section" style="background: #fff;">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Atención en un Clic</span>
+          <h2 class="section-title">¿Qué necesitas resolver hoy?</h2>
+          <p class="section-desc">Accede directamente al canal adaptado a lo que tu familia o empresa necesita.</p>
+        </div>
+
+        <div class="grid-4">
+          <div class="card-box" style="border-top: 4px solid var(--color-terracota);">
+            <div style="font-size: 2rem; margin-bottom: 12px;">🏡</div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 8px;">Servicios en el Hogar</h3>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">Aseo personal, acompañamientos diurnos o nocturnos, internas y rehabilitación médica.</p>
+            <a href="servicios.html" style="font-weight: bold; color: var(--color-terracota); font-size: 0.88rem;">Ver todos los servicios →</a>
+          </div>
+
+          <div class="card-box" style="border-top: 4px solid var(--color-petroleo);">
+            <div style="font-size: 2rem; margin-bottom: 12px;">📚</div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 8px;">Cursos para Empresas</h3>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">Formación continua bonificada 100% por FUNDAE para residencias, clínicas y cuidadores.</p>
+            <a href="cursos.html" style="font-weight: bold; color: var(--color-petroleo); font-size: 0.88rem;">Ver catálogo de cursos →</a>
+          </div>
+
+          <div class="card-box" style="border-top: 4px solid var(--color-salvia);">
+            <div style="font-size: 2rem; margin-bottom: 12px;">💼</div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 8px;">Bolsa de Empleo</h3>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">Ofertas para auxiliares y gerocultores con contratos dignos, estabilidad y formación.</p>
+            <a href="empleo.html" style="font-weight: bold; color: var(--color-salvia); font-size: 0.88rem;">Inscribirme en ofertas →</a>
+          </div>
+
+          <div class="card-box" style="border-top: 4px solid var(--color-ambar);">
+            <div style="font-size: 2rem; margin-bottom: 12px;">📰</div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 8px;">Noticias y Normativa</h3>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">Actualizaciones de la Ley de Dependencia, ayudas del BOA y consejos para familias.</p>
+            <a href="noticias.html" style="font-weight: bold; color: var(--color-ambar-dark); font-size: 0.88rem;">Leer novedades →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO TRABAJAMOS EN 4 PASOS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Sencillo, Transparente y Humano</span>
+          <h2 class="section-title">Cómo trabajamos junto a tu familia</h2>
+          <p class="section-desc">En cuatro pasos ponemos en marcha el cuidado adaptado a vuestro ser querido.</p>
+        </div>
+
+        <div class="grid-4">
+          <div class="card-box">
+            <span style="font-size: 2rem; font-weight: 900; color: rgba(200, 101, 58, 0.25); display: block; margin-bottom: 8px;">01</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px;">Llamada o solicitud</h3>
+            <p style="font-size: 0.88rem; color: #666;">Nos cuentas la situación de tu familiar, horarios que necesitáis y el grado de dependencia.</p>
+          </div>
+          <div class="card-box">
+            <span style="font-size: 2rem; font-weight: 900; color: rgba(200, 101, 58, 0.25); display: block; margin-bottom: 8px;">02</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px;">Visita de valoración</h3>
+            <p style="font-size: 0.88rem; color: #666;">Un coordinador acude al hogar sin ningún compromiso para conocer a la persona en su entorno.</p>
+          </div>
+          <div class="card-box">
+            <span style="font-size: 2rem; font-weight: 900; color: rgba(200, 101, 58, 0.25); display: block; margin-bottom: 8px;">03</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px;">Plan y profesional afín</h3>
+            <p style="font-size: 0.88rem; color: #666;">Seleccionamos el profesional cualificado idóneo por carácter, titulación técnica y cercanía geográfica.</p>
+          </div>
+          <div class="card-box">
+            <span style="font-size: 2rem; font-weight: 900; color: rgba(200, 101, 58, 0.25); display: block; margin-bottom: 8px;">04</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px;">Seguimiento continuo</h3>
+            <p style="font-size: 0.88rem; color: #666;">Evaluación periódica de la satisfacción con la familia y sustituciones inmediatas garantizadas.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 45px;">
+          <button class="btn-primary js-open-valoracion">Iniciar valoración gratuita para mi familiar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELLO DIFERENCIAL LEY DE DEPENDENCIA -->
+    <section class="section" style="background: var(--color-petroleo); color: #fff; border-bottom: none;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
+          <div>
+            <span style="background: var(--color-ambar); color: #000; font-size: 0.75rem; font-weight: 800; padding: 4px 12px; border-radius: var(--radius-full); text-transform: uppercase;">Ventaja para Familias</span>
+            <h2 style="font-size: 2.3rem; font-weight: 800; margin: 15px 0; line-height: 1.2;">Nos encargamos de todos los trámites de la Ley de Dependencia y Ayudas</h2>
+            <p style="font-size: 1rem; color: #e0ecee; margin-bottom: 20px;">
+              Muchas familias renuncian a cobrar entre 300 € y 700 € mensuales de prestación pública por lo complejo y lento de la burocracia. Nuestro equipo tramita el expediente completo: solicitud de grado, Programa Individual de Atención (PIA) y revisiones.
+            </p>
+            <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.85rem; color: var(--color-ambar);">
+              <li>✓ Sin coste si contratas cuidados</li>
+              <li>✓ Revisión de grados ya otorgados</li>
+              <li>✓ Acompañamiento ante el valorador oficial</li>
+              <li>✓ Subvenciones de reformas de baño y vivienda</li>
+            </ul>
+          </div>
+          <div class="card-box" style="color: var(--color-carbon); text-align: center;">
+            <h3 style="font-size: 1.3rem; font-weight: 800; margin-bottom: 10px;">¿Quieres saber qué ayuda te corresponde?</h3>
+            <p style="font-size: 0.85rem; color: #666; margin-bottom: 20px;">Te asesoramos de forma inmediata y gratuita sobre el baremo en Aragón.</p>
+            <a href="servicios.html#asesoria" class="btn-accent" style="width: 100%; justify-content: center;">Consultar trámites de dependencia</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL: VALORACIÓN GRATUITA -->
+  <div id="modal-valoracion" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close-btn js-close-modal" aria-label="Cerrar modal">✕</button>
+      <div style="margin-bottom: 20px;">
+        <span style="font-size: 0.75rem; font-weight: 800; color: var(--color-terracota); text-transform: uppercase;">Atención Gratuita</span>
+        <h3 style="font-size: 1.6rem; font-weight: 800; margin-top: 4px;">Pide tu Valoración Sociosanitaria Gratuita</h3>
+        <p style="font-size: 0.85rem; color: #666; margin-top: 6px;">Un coordinador sociosanitario se pondrá en contacto contigo en menos de 24 horas.</p>
+      </div>
+
+      <form id="form-valoracion">
+        <div class="form-group">
+          <label class="form-label" for="val-nombre">Nombre del familiar o solicitante *</label>
+          <input type="text" id="val-nombre" class="form-control" required placeholder="Ej. Rebeca García">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="val-telefono">Teléfono de contacto *</label>
+          <input type="tel" id="val-telefono" class="form-control" required placeholder="600 000 000">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="val-servicio">¿Qué necesidad principal tenéis?</label>
+          <select id="val-servicio" class="form-control">
+            <option>Ayuda y aseo personal en el hogar</option>
+            <option>Acompañamiento diurno o paseos</option>
+            <option>Vigilancia nocturna o fin de semana</option>
+            <option>Cuidador interno 24 horas</option>
+            <option>Cuidado de Alzheimer o deterioro cognitivo</option>
+            <option>Convalecencia y alta hospitalaria</option>
+            <option>Trámites de la Ley de Dependencia</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label style="display: flex; gap: 8px; font-size: 0.75rem; color: #666; align-items: flex-start;">
+            <input type="checkbox" required style="margin-top: 2px;">
+            <span>Acepto la <a href="politica-privacidad.html" target="_blank" style="text-decoration: underline; color: var(--color-terracota);">Política de Privacidad</a> de Lumbre Residencial SL para gestionar mi valoración gratuita.</span>
+          </label>
+        </div>
+        <button type="submit" class="btn-accent" style="width: 100%; justify-content: center; margin-top: 10px;">Solicitar llamada y valoración sin compromiso</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER CORPORATIVO Y LEGAL -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div style="font-size: 1.3rem; font-weight: 800; color: #fff; margin-bottom: 8px;">
+            LUMBRE <span style="color: var(--color-terracota);">RESIDENCIAL</span>
+          </div>
+          <p style="font-size: 0.82rem; color: #aaa; line-height: 1.5; margin-bottom: 12px;">
+            Lumbre Residencial SL · Servicios sociosanitarios, ayuda a domicilio, acompañamiento hospitalario y formación continua en Aragón.
+          </p>
+          <p style="font-size: 0.8rem; color: var(--color-ambar); font-weight: bold;">
+            Dominios: lumbreresidencial.com · lumbreresidencial.es
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="servicios.html">Servicios de Cuidado</a></li>
+            <li><a href="cursos.html">Cursos Bonificados FUNDAE</a></li>
+            <li><a href="noticias.html">Noticias y Normativa</a></li>
+            <li><a href="empleo.html">Bolsa de Empleo</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Información Legal</h4>
+          <p style="font-size: 0.8rem; color: #aaa; margin-bottom: 10px;">
+            <strong>Lumbre Residencial SL</strong><br>
+            Actividad: Asistencia sociosanitaria domiciliaria<br>
+            Sede: Zaragoza / Teruel (Aragón)
+          </p>
+          <ul class="footer-links">
+            <li><a href="aviso-legal.html">Aviso Legal (LSSI)</a></li>
+            <li><a href="politica-privacidad.html">Política de Privacidad (RGPD)</a></li>
+            <li><a href="politica-cookies.html">Política de Cookies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Garantías de Calidad</h4>
+          <p style="font-size: 0.8rem; color: #aaa; line-height: 1.6; margin-bottom: 15px;">
+            🛡️ Seguro de Responsabilidad Civil Integral.<br>
+            📋 Personal Titulado con referencias.<br>
+            🤝 Coordinador asignado a cada familia.
+          </p>
+          <button class="btn-primary js-open-valoracion" style="font-size: 0.78rem; padding: 8px 16px;">Valoración Gratuita</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Lumbre Residencial SL. Todos los derechos reservados.</div>
+        <div>Accesibilidad adaptada para personas mayores (WCAG 2.1 AA).</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BARRA MÓVIL FIJA -->
+  <div class="mobile-bottom-bar">
+    <a href="tel:976000000" style="font-size: 0.8rem; font-weight: bold; color: var(--color-carbon); text-align: center;">
+      📞<br>Llamar
+    </a>
+    <a href="https://wa.me/34600000000" target="_blank" style="font-size: 0.8rem; font-weight: bold; color: #1e7e34; text-align: center;">
+      💬<br>WhatsApp
+    </a>
+    <button class="btn-primary js-open-valoracion" style="font-size: 0.78rem; padding: 8px 16px;">
+      ✨ Valoración
+    </button>
+  </div>
+
+  <!-- BANNER DE COOKIES -->
+  <div id="cookie-banner" style="display: none; position: fixed; bottom: 20px; right: 20px; max-width: 400px; background: #fff; padding: 20px; border-radius: var(--radius-md); box-shadow: 0 10px 30px rgba(0,0,0,0.2); border: 2px solid var(--color-borde); z-index: 9999;">
+    <p style="font-size: 0.8rem; color: #555; margin-bottom: 12px;">
+      <strong>Usamos cookies técnicas y analíticas</strong> para ofrecerte una navegación accesible conforme a la normativa española y europea.
+    </p>
+    <div style="display: flex; gap: 8px; justify-content: flex-end;">
+      <button id="btn-reject-cookies" style="background: none; border: 1px solid #ccc; padding: 6px 12px; border-radius: var(--radius-full); font-size: 0.75rem; cursor: pointer;">Solo esenciales</button>
+      <button id="btn-accept-cookies" class="btn-primary" style="padding: 6px 14px; font-size: 0.75rem;">Aceptar todas</button>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
 </html>
