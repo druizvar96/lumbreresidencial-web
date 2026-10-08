@@ -1,32 +1,20 @@
-# React + TypeScript + Vite
+# Lumbre Residencial SL
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Web corporativa oficial de **Lumbre Residencial SL** (Aragón, España).
+Servicios sociosanitarios, ayuda a domicilio, acompañamiento hospitalario, fisioterapia y formación bonificada FUNDAE.
 
-Currently, two official plugins are available:
+## Estructura del Proyecto (HTML Estático Tradicional)
+- `index.html`: Portada corporativa con valoraciones y compromisos de confianza.
+- `servicios.html`: Los 5 bloques integrales de cuidado en el hogar y Ley de Dependencia.
+- `cursos.html`: Cursos para residencias y empresas bonificables 100% por FUNDAE.
+- `noticias.html`: Novedades regulatorias y panel rápido de avisos.
+- `empleo.html`: Bolsa de empleo y recepción de candidaturas.
+- `quienes-somos.html`: Misión, valores y garantías de responsabilidad civil.
+- `contacto.html`: Teléfono, WhatsApp, correos departamentales y código QR.
+- `aviso-legal.html`, `politica-privacidad.html`, `politica-cookies.html`: Marco legal LSSI y RGPD.
+- `css/style.css`: Estilos corporativos con diseño accesible WCAG 2.1 AA.
+- `js/main.js`: Lógica ligera para accesibilidad, modales y formularios.
+- `images/`: Logotipo, isotipo y fotografías del servicio.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Uso
+Compatible con doble clic local directo en cualquier navegador y despliegue inmediato en hosting (Ionos, etc.).
