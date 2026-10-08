@@ -41,7 +41,6 @@
 
       <nav aria-label="Navegación principal">
         <ul class="nav-links">
-          <li><a href="index.html" class="active">Inicio</a></li>
           <li><a href="servicios.html">Servicios</a></li>
           <li><a href="cursos.html">Cursos Empresa</a></li>
           <li><a href="noticias.html">Noticias y Normativa</a></li>
@@ -52,7 +51,7 @@
       </nav>
 
       <div>
-        <a href="#valoracion" class="btn-header-cta js-open-valoracion">✨ Valoración gratuita</a>
+        <a href="contacto.html" class="btn-header-cta">Pedir información</a>
         <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Abrir menú">☰</button>
       </div>
     </div>
@@ -60,7 +59,6 @@
     <!-- Menú móvil desplegable -->
     <div id="mobile-nav-panel" style="display: none; background: #fff; padding: 15px 20px; border-bottom: 1px solid var(--color-borde);">
       <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
-        <li><a href="index.html" style="font-weight: bold; color: var(--color-terracota);">Inicio</a></li>
         <li><a href="servicios.html">Servicios de Cuidado</a></li>
         <li><a href="cursos.html">Cursos y Formación FUNDAE</a></li>
         <li><a href="noticias.html">Noticias y Normativa</a></li>
@@ -84,7 +82,7 @@
             </p>
 
             <div class="hero-ctas">
-              <button class="btn-accent js-open-valoracion">✨ Pide tu valoración gratuita</button>
+              <a href="contacto.html" class="btn-accent">Pedir información y presupuesto</a>
               <a href="tel:976000000" class="btn-outline">📞 Llamar ahora</a>
               <a href="https://wa.me/34600000000?text=Hola,%20quisiera%20información%20sobre%20Lumbre%20Residencial" target="_blank" class="btn-outline" style="border-color: #25D366; color: #1e7e34;">💬 WhatsApp directo</a>
             </div>
@@ -178,8 +176,8 @@
           </div>
           <div class="card-box">
             <span style="font-size: 2rem; font-weight: 900; color: rgba(200, 101, 58, 0.25); display: block; margin-bottom: 8px;">02</span>
-            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px;">Visita de valoración</h3>
-            <p style="font-size: 0.88rem; color: #666;">Un coordinador acude al hogar sin ningún compromiso para conocer a la persona en su entorno.</p>
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px;">Visita inicial</h3>
+            <p style="font-size: 0.88rem; color: #666;">Un coordinador acude al hogar para conocer a la persona en su entorno y definir las coberturas.</p>
           </div>
           <div class="card-box">
             <span style="font-size: 2rem; font-weight: 900; color: rgba(200, 101, 58, 0.25); display: block; margin-bottom: 8px;">03</span>
@@ -194,7 +192,7 @@
         </div>
 
         <div style="text-align: center; margin-top: 45px;">
-          <button class="btn-primary js-open-valoracion">Iniciar valoración gratuita para mi familiar</button>
+          <a href="contacto.html" class="btn-primary">Pedir información para mi familiar</a>
         </div>
       </div>
     </section>
@@ -218,55 +216,13 @@
           </div>
           <div class="card-box" style="color: var(--color-carbon); text-align: center;">
             <h3 style="font-size: 1.3rem; font-weight: 800; margin-bottom: 10px;">¿Quieres saber qué ayuda te corresponde?</h3>
-            <p style="font-size: 0.85rem; color: #666; margin-bottom: 20px;">Te asesoramos de forma inmediata y gratuita sobre el baremo en Aragón.</p>
+            <p style="font-size: 0.85rem; color: #666; margin-bottom: 20px;">Te asesoramos de forma inmediata sobre el baremo en Aragón.</p>
             <a href="servicios.html#asesoria" class="btn-accent" style="width: 100%; justify-content: center;">Consultar trámites de dependencia</a>
           </div>
         </div>
       </div>
     </section>
   </main>
-
-  <!-- MODAL: VALORACIÓN GRATUITA -->
-  <div id="modal-valoracion" class="modal-overlay" role="dialog" aria-modal="true">
-    <div class="modal-content">
-      <button class="modal-close-btn js-close-modal" aria-label="Cerrar modal">✕</button>
-      <div style="margin-bottom: 20px;">
-        <span style="font-size: 0.75rem; font-weight: 800; color: var(--color-terracota); text-transform: uppercase;">Atención Gratuita</span>
-        <h3 style="font-size: 1.6rem; font-weight: 800; margin-top: 4px;">Pide tu Valoración Sociosanitaria Gratuita</h3>
-        <p style="font-size: 0.85rem; color: #666; margin-top: 6px;">Un coordinador sociosanitario se pondrá en contacto contigo en menos de 24 horas.</p>
-      </div>
-
-      <form id="form-valoracion">
-        <div class="form-group">
-          <label class="form-label" for="val-nombre">Nombre del familiar o solicitante *</label>
-          <input type="text" id="val-nombre" class="form-control" required placeholder="Ej. Rebeca García">
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="val-telefono">Teléfono de contacto *</label>
-          <input type="tel" id="val-telefono" class="form-control" required placeholder="600 000 000">
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="val-servicio">¿Qué necesidad principal tenéis?</label>
-          <select id="val-servicio" class="form-control">
-            <option>Ayuda y aseo personal en el hogar</option>
-            <option>Acompañamiento diurno o paseos</option>
-            <option>Vigilancia nocturna o fin de semana</option>
-            <option>Cuidador interno 24 horas</option>
-            <option>Cuidado de Alzheimer o deterioro cognitivo</option>
-            <option>Convalecencia y alta hospitalaria</option>
-            <option>Trámites de la Ley de Dependencia</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label style="display: flex; gap: 8px; font-size: 0.75rem; color: #666; align-items: flex-start;">
-            <input type="checkbox" required style="margin-top: 2px;">
-            <span>Acepto la <a href="politica-privacidad.html" target="_blank" style="text-decoration: underline; color: var(--color-terracota);">Política de Privacidad</a> de Lumbre Residencial SL para gestionar mi valoración gratuita.</span>
-          </label>
-        </div>
-        <button type="submit" class="btn-accent" style="width: 100%; justify-content: center; margin-top: 10px;">Solicitar llamada y valoración sin compromiso</button>
-      </form>
-    </div>
-  </div>
 
   <!-- FOOTER CORPORATIVO Y LEGAL -->
   <footer class="site-footer">
@@ -278,9 +234,6 @@
           </div>
           <p style="font-size: 0.82rem; color: #aaa; line-height: 1.5; margin-bottom: 12px;">
             Lumbre Residencial SL · Servicios sociosanitarios, ayuda a domicilio, acompañamiento hospitalario y formación continua en Aragón.
-          </p>
-          <p style="font-size: 0.8rem; color: var(--color-ambar); font-weight: bold;">
-            Dominios: lumbreresidencial.com · lumbreresidencial.es
           </p>
         </div>
 
@@ -317,7 +270,7 @@
             📋 Personal Titulado con referencias.<br>
             🤝 Coordinador asignado a cada familia.
           </p>
-          <button class="btn-primary js-open-valoracion" style="font-size: 0.78rem; padding: 8px 16px;">Valoración Gratuita</button>
+          <a href="contacto.html" class="btn-primary" style="font-size: 0.78rem; padding: 8px 16px;">Contactar ahora</a>
         </div>
       </div>
 
@@ -336,9 +289,9 @@
     <a href="https://wa.me/34600000000" target="_blank" style="font-size: 0.8rem; font-weight: bold; color: #1e7e34; text-align: center;">
       💬<br>WhatsApp
     </a>
-    <button class="btn-primary js-open-valoracion" style="font-size: 0.78rem; padding: 8px 16px;">
-      ✨ Valoración
-    </button>
+    <a href="contacto.html" class="btn-primary" style="font-size: 0.78rem; padding: 8px 16px;">
+      Contacto
+    </a>
   </div>
 
   <!-- BANNER DE COOKIES -->

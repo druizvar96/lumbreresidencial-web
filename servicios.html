@@ -39,7 +39,6 @@
 
       <nav aria-label="Navegación principal">
         <ul class="nav-links">
-          <li><a href="index.html">Inicio</a></li>
           <li><a href="servicios.html" class="active">Servicios</a></li>
           <li><a href="cursos.html">Cursos Empresa</a></li>
           <li><a href="noticias.html">Noticias y Normativa</a></li>
@@ -50,7 +49,7 @@
       </nav>
 
       <div>
-        <a href="#valoracion" class="btn-header-cta js-open-valoracion">✨ Valoración gratuita</a>
+        <a href="contacto.html" class="btn-header-cta">Pedir información</a>
         <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Abrir menú">☰</button>
       </div>
     </div>
@@ -67,13 +66,13 @@
           </p>
         </div>
 
-        <!-- Banner Asistente Orientativo -->
+        <!-- Banner Contacto -->
         <div class="card-box" style="background: linear-gradient(135deg, #fdf6ec, #faebd7); border-color: rgba(200, 101, 58, 0.3); margin-bottom: 50px; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; gap: 20px;">
           <div>
             <h3 style="font-size: 1.3rem; font-weight: 800; color: #5a2c16; margin-bottom: 6px;">¿No tienes claro qué tipo de atención necesitas?</h3>
-            <p style="font-size: 0.9rem; color: #723e24;">Te orientamos gratis por teléfono o acudimos a tu casa para conocer a tu familiar en persona.</p>
+            <p style="font-size: 0.9rem; color: #723e24;">Te orientamos por teléfono o acudimos a tu casa para conocer a tu familiar en persona.</p>
           </div>
-          <button class="btn-primary js-open-valoracion" style="white-space: nowrap;">Pedir valoración gratuita</button>
+          <a href="contacto.html" class="btn-primary" style="white-space: nowrap;">Pedir información</a>
         </div>
 
         <!-- BLOQUE 1 -->
@@ -173,26 +172,6 @@
       </div>
     </section>
   </main>
-
-  <!-- Modal común de Valoración -->
-  <div id="modal-valoracion" class="modal-overlay" role="dialog" aria-modal="true">
-    <div class="modal-content">
-      <button class="modal-close-btn js-close-modal">✕</button>
-      <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 10px;">Solicitar Valoración para mi Familiar</h3>
-      <p style="font-size: 0.85rem; color: #666; margin-bottom: 20px;">Llámanos o déjanos tus datos para coordinar una visita sin coste.</p>
-      <form id="form-valoracion">
-        <div class="form-group">
-          <label class="form-label">Nombre y apellidos *</label>
-          <input type="text" id="val-nombre" class="form-control" required placeholder="Tu nombre">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Teléfono *</label>
-          <input type="tel" id="val-telefono" class="form-control" required placeholder="600 000 000">
-        </div>
-        <button type="submit" class="btn-accent" style="width: 100%; justify-content: center;">Enviar solicitud</button>
-      </form>
-    </div>
-  </div>
 
   <footer class="site-footer">
     <div class="container" style="text-align: center; font-size: 0.85rem;">
